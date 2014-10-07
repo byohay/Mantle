@@ -669,7 +669,7 @@
 			name = "Mantle-iOS Tests";
 			productName = MaverickTests;
 			productReference = D042FC8715F72BC7004E8054 /* Mantle-iOS Tests.xctest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0A56B451804B04900A84EDC /* Mantle-Mac */ = {
 			isa = PBXNativeTarget;
@@ -695,7 +695,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = GitHub;
 			};
 			buildConfigurationList = D042FC3515F72B23004E8054 /* Build configuration list for PBXProject "Mantle" */;
@@ -875,10 +875,12 @@
 			baseConfigurationReference = D094E4831777619600906BF7 /* Debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "Mantle/Mantle-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -887,6 +889,7 @@
 			baseConfigurationReference = D094E4851777619600906BF7 /* Release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "Mantle/Mantle-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -1030,6 +1033,7 @@
 			baseConfigurationReference = D094E4841777619600906BF7 /* Profile.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "Mantle/Mantle-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -1133,6 +1137,7 @@
 			baseConfigurationReference = D094E4861777619600906BF7 /* Test.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "Mantle/Mantle-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
